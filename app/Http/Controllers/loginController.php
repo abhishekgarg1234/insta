@@ -14,16 +14,10 @@ class loginController extends BaseController
 	public function login(Request $req){
 		$username = $req->input('username');
 		$password = $req->input('password');
-
-		$users = DB::table('followtable')
-				->where([
-					['userid'=>$username],
-					['password'=>$password]
-					)]
-				->pluck('followid');
-
+		$users = DB::table('followTable')
+				 ->where(['userid'=>$username])
+				 ->pluck('followid');
 		$data=array("id"=>$username);
-
 		return view('main', ['users' => $users , 'login' => $data]);
 	}
 
