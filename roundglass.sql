@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2017 at 10:50 AM
+-- Generation Time: May 20, 2017 at 11:26 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -61,10 +61,8 @@ CREATE TABLE `usertable` (
 INSERT INTO `usertable` (`id`, `userid`, `password`) VALUES
 (1, 'abhi', 'garg'),
 (2, 'ramit', 'ramit'),
-(3, 'abhishek', 'abhishek'),
-(4, 'ab', 'ab'),
-(5, 'ram', 'ram'),
-(6, 'ravish', 'ravish');
+(8, 'abh', 'abh'),
+(7, 'ab', 'ab');
 
 --
 -- Indexes for dumped tables
@@ -90,12 +88,12 @@ ALTER TABLE `usertable`
 -- AUTO_INCREMENT for table `followtable`
 --
 ALTER TABLE `followtable`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `usertable`
 --
 ALTER TABLE `usertable`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
