@@ -43,20 +43,18 @@ class loginController extends BaseController
 					])
 				->pluck('followid');
 
+		$arr1=array();
+		$arr2=array();
 		$arr=array();
-		foreach ($use as $key1) {
-			$check = 1;
-			foreach ($use2 as $key2) {
-				if($key1 == $key2){
-					$check = 2 ;
-				}
-			}
-
-			if($check == 1){
-				array_push( $arr , $key1 );
-			}
+		foreach ($use as $key) {
+			array_push($arr1,$key);
+		}
+		foreach ($use2 as $key) {
+			array_push($arr2,$key);
 		}
 
+		$arr = array_diff($arr1, $arr2);
+		
 		$ht='';
 		foreach ($arr as $title) {
     		$ht .= '<div class="show" id="';

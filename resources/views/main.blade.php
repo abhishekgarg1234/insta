@@ -23,18 +23,12 @@
         document.getElementById("myList").appendChild(node);
         $("#livesearch").html("");
 
-
         var data = {
             "first_user": "",
             "sec_user": ""
         };
         data.first_user = uu;
-
-
         data.sec_user = cl;
-        console.log("trtr");
-        console.log(data);
-
 
         if (window.XMLHttpRequest) {
             xmlhttp = new XMLHttpRequest();
@@ -49,34 +43,12 @@
             }
         }
         var dat1 = JSON.stringify(data);
-
-        console.log(data);
         xmlhttp.open("get", "loginme3/" + dat1, true);
         xmlhttp.send();
-
-
-
-        /*
-             $.ajax({
-                  url: "loginme3",
-                  cache: false,
-                  type:  "POST",
-                  data:  JSON.stringify(data),
-                  success: function(html){
-                    console.log("ajax done");
-                  },
-                failure: function (errMsg) {
-                  console.log("err msg");
-                }
-                });
-
-        */
-
     }
     </script>
     <script>
     function showResult(str, us) {
-
 
         set_value(us);
         console.log(us);
@@ -129,6 +101,7 @@
             <br>
     </div>
     <div id="followers_list">
+        <br>
         <br>
         <br>
         <br>
